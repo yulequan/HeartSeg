@@ -1,0 +1,3 @@
+[submodule "3D-Caffe"]
+	path = 3D-Caffe
+	url = https://github.com/yulequan/3D-Caffe
