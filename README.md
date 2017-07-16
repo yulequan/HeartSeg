@@ -10,7 +10,7 @@ This repository includes the code (training and testing) for our papers about De
 
 1. Follow the instruction of [3D-Caffe](https://github.com/yulequan/3D-Caffe#installation) to install Caffe library.
 
-2. Also Use ```make matcaffe``` to build Matlab interface. 
+2. Also use ```make matcaffe``` to build Matlab interface. 
 
 3. Install Matlab toolbox [NIfTI_tools](https://www.mathworks.com/matlabcentral/fileexchange/8797-tools-for-nifti-and-analyze-image) in order to read nii data format in Matlab.
 
@@ -18,7 +18,7 @@ This repository includes the code (training and testing) for our papers about De
 
 1. Download [HVSMR](http://segchd.csail.mit.edu/data.html) dataset (phase 2) and put them in folder ``data``.
 
-2. Prepare the hdf5 data format to train the model.
+2. Prepare the hdf5 data to train the model.
   ```shell
   cd code
   #modify parameters in prepare_h5_data.m file
@@ -46,9 +46,10 @@ This repository includes the code (training and testing) for our papers about De
 
 ### Citation
 If you find this code is useful for your research, pleae consider citing:
+  
   @article{yu2017automatic,
-    title={Automatic 3D Cardiovascular MR Segmentation with Densely-Connected Volumetric ConvNets},
     author={Yu, Lequan and Cheng,Jie-Zhi and Dou, Qi and Yang, Xin and Chen, Hao and Qin, Jing and Heng, Pheng-Ann},
+    title={Automatic 3D Cardiovascular MR Segmentation with Densely-Connected Volumetric ConvNets},
     Journal={MICCAI},
     year={2017}
   }
@@ -56,11 +57,11 @@ If you find this code is useful for your research, pleae consider citing:
 and/or
 
   @article{dou20173d,
-    title={3D deeply supervised network for automated segmentation of volumetric medical images},
     author={Dou, Qi and Yu, Lequan and Chen, Hao and Jin, Yueming and Yang, Xin and Qin, Jing and Heng, Pheng-Ann},
+    title={3D deeply supervised network for automated segmentation of volumetric medical images},
     journal={Medical Image Analysis},
-    year={2017},
-    publisher={Elsevier}
+    publisher={Elsevier},
+    year={2017}
   }
 
 ###Questions
