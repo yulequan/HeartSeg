@@ -10,7 +10,7 @@ addpath(genpath('../3D-Caffe/matlab/'));
 % parameters
 use_isotropic = 0;
 patchSize = 64;
-ita = 4;
+ita = 4; # control the overlap between different patches
 level = 1;
 tr_mean = 0;
 
@@ -76,20 +76,10 @@ for id = 0:0
     vote_label = RemoveMinorCC(vote_label,0.2);
     avg_label = RemoveMinorCC(avg_label,0.2);
     
-    %% save with original header info.
-    img_src = load_untouch_nii(vol_path);
-    vote_label = permute(vote_label, [2 3 1]);
-    vote_label = rot90(vote_label, 2);      
- 	img_src.img = uint16(vote_label);
-    save_name = [result_folder, 'voting/training_axial_crop_pat', num2str(id), '-label.nii.gz'];
-    save_untouch_nii(img_src, save_name);
-
-    avg_label = permute(avg_label, [2 3 1]);
-    avg_label = rot90(avg_label, 2);
-    img_src.img = uint16(avg_label);
-    save_name = [result_folder, 'avg/training_axial_crop_pat', num2str(id), '-label.nii.gz'];
-    save_untouch_nii(img_src, save_name);
-    toc;
+    %%view result
+    view_nii(make_nii(data));
+    view_nii(make_nii(double(vote_label)));
+    view_nii(make_nii(double(avg_label)));
 end
 caffe.reset_all;
 
