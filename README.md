@@ -38,9 +38,9 @@ This repository includes the code (training and testing) for our papers about De
 ### Note
 - We use **HDF5DataLayer** to read data. You need to generate the hdf5 data from original data type. See ``prepare_h5_data.m`` for more details.
 
-- Due to the limited GPU memory, we use patch-based training/testing strategy. The patch size is 64*64*64. You can modify it in network architecture and corresponding .m file.
+- Due to the limited GPU memory, we use patch-based training/testing strategy. The patch size is 64 by 64 by 64. You can modify it in network architecture and corresponding .m file.
 
-- In order to get the whole prediction, we provided two schemes (average fusion and major voting). Please see paper for more details.
+- In order to get the whole prediction, we provided two schemes (average fusion and major voting). Please see papers for more detail.
 
 - Generally, the batch normalization will accerate the training. We had better set the batch size (>1) to properly use batchnorm.
 
