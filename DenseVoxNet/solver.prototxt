@@ -11,6 +11,6 @@ max_iter: 15000
 momentum: 0.9
 weight_decay: 0.0005
 snapshot: 3000
-snapshot_prefix: "./snapshot/HVSMR_Densenet"
+snapshot_prefix: "./snapshot/HVSMR"
 solver_mode: GPU
 random_seed: 831486

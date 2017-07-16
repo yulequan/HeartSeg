@@ -16,7 +16,7 @@ tr_mean = 0;
 
 % set model path 
 addpath('./util');
-model_folder = '../DSN/'
+model_folder = '../DenseVoxNet/'
 model   = [model_folder, 'deploy.prototxt'];
 weights = [model_folder, 'snapshot/HVSMR_iter_15000.caffemodel'];
 
