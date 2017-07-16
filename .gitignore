@@ -1,0 +1,19 @@
+#train list file
+*.list
+
+#h5_data
+h5_data/*
+
+
+#snapshot and log file
+*/snapshot/*
+*/training_log/*
+
+
+#result file
+result/*
+
+# Editor temporaries
+*.swp
+*~
+
