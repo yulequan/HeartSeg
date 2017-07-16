@@ -48,21 +48,28 @@ This repository includes the code (training and testing) for our papers about De
 If you find this code is useful for your research, pleae consider citing:
   
   @article{yu2017automatic,
-    author={Yu, Lequan and Cheng,Jie-Zhi and Dou, Qi and Yang, Xin and Chen, Hao and Qin, Jing and Heng, Pheng-Ann},
-    title={Automatic 3D Cardiovascular MR Segmentation with Densely-Connected Volumetric ConvNets},
-    Journal={MICCAI},
-    year={2017}
+    author = {Yu, Lequan and Cheng,Jie-Zhi and Dou, Qi and Yang, Xin and Chen, Hao and Qin, Jing and Heng, Pheng-Ann},
+    title = {Automatic 3D Cardiovascular MR Segmentation with Densely-Connected Volumetric ConvNets},
+    Journal = {MICCAI},
+    year = {2017}
   }
   
 and/or
 
   @article{dou20173d,
-    author={Dou, Qi and Yu, Lequan and Chen, Hao and Jin, Yueming and Yang, Xin and Qin, Jing and Heng, Pheng-Ann},
-    title={3D deeply supervised network for automated segmentation of volumetric medical images},
-    journal={Medical Image Analysis},
-    publisher={Elsevier},
-    year={2017}
+    author = {Dou, Qi and Yu, Lequan and Chen, Hao and Jin, Yueming and Yang, Xin and Qin, Jing and Heng, Pheng-Ann},
+    title = {3D deeply supervised network for automated segmentation of volumetric medical images},
+    journal = {Medical Image Analysis},
+    publisher = {Elsevier},
+    year = {2017}
   }
+  
+  @article{ren15fasterrcnn,
+        Author = {Shaoqing Ren, Kaiming He, Ross Girshick, Jian Sun},
+        Title = {{Faster R-CNN}: Towards Real-Time Object Detection with Region Proposal Networks},
+        Journal = {arXiv preprint arXiv:1506.01497},
+        Year = {2015}
+    }
 
 ###Questions
 
