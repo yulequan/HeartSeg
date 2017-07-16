@@ -1,6 +1,6 @@
 ## DenseVoxNet and 3D-DSN
- * Automatic 3D Cardiovascular MR Segmentation with Densely-Connected Volumetric ConvNets
- * 3D Deeply Supervised Network for Automated Segmentation of Volumetric Medical Images
+ * Automatic 3D Cardiovascular MR Segmentation with Densely-Connected Volumetric ConvNets, MICCAI 2017
+ * 3D Deeply Supervised Network for Automated Segmentation of Volumetric Medical Images, MedIA 2017
 
 ### Introduction
 
