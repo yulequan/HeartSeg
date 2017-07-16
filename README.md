@@ -63,14 +63,7 @@ and/or
     publisher = {Elsevier},
     year = {2017}
   }
-  
-  @article{ren15fasterrcnn,
-        Author = {Shaoqing Ren, Kaiming He, Ross Girshick, Jian Sun},
-        Title = {{Faster R-CNN}: Towards Real-Time Object Detection with Region Proposal Networks},
-        Journal = {arXiv preprint arXiv:1506.01497},
-        Year = {2015}
-    }
 
-###Questions
+### Questions
 
 Please contact 'ylqzd2011@gmail.com' or 'lqyu@cse.cuhk.edu.hk'
