@@ -8,11 +8,20 @@ This repository includes the code (training and testing) for our papers about De
 
 ### Installation
 
-1. Follow the instruction of [3D-Caffe](https://github.com/yulequan/3D-Caffe#installation) to install Caffe library.
+1. Follow the instruction of [3D-Caffe](https://github.com/yulequan/3D-Caffe#installation) to install Caffe library. Rememebr to use ```git checkout 3D-Caffe``` to switch the correct branch and use ```make matcaffe``` to build Matlab interface. 
 
-2. Also use ```make matcaffe``` to build Matlab interface. 
+2. As an alternative, You can 
+```shell
+git clone https://github.com/yulequan/HeartSeg
+cd 3D-Caffe
+cp Makefile.config.example Makefile.config
+vim Makefile.config
+##uncomment USE_CUDNN := 1 if you want to use CuDNN
+make -j8
+make matcaffe
+```
 
-3. Install Matlab toolbox [NIfTI_tools](https://www.mathworks.com/matlabcentral/fileexchange/8797-tools-for-nifti-and-analyze-image) in order to read nii data format in Matlab.
+2. Install Matlab toolbox [NIfTI_tools](https://www.mathworks.com/matlabcentral/fileexchange/8797-tools-for-nifti-and-analyze-image) in order to read nii data format in Matlab.
 
 ### Usage
 
@@ -45,7 +54,7 @@ This repository includes the code (training and testing) for our papers about De
 - Generally, the batch normalization will accerate the training. We had better set the batch size (>1) to properly use batchnorm.
 
 ### Citation
-If you find this code is useful for your research, pleae consider citing:
+If you find this code is useful for your research, please consider citing:
   
   @article{yu2017automatic,
     author = {Yu, Lequan and Cheng,Jie-Zhi and Dou, Qi and Yang, Xin and Chen, Hao and Qin, Jing and Heng, Pheng-Ann},
