@@ -10,18 +10,18 @@ This repository includes the code (training and testing) for our papers about De
 
 1. Follow the instruction of [3D-Caffe](https://github.com/yulequan/3D-Caffe#installation) to install Caffe library. Rememebr to use ```git checkout 3D-Caffe``` to switch the correct branch and use ```make matcaffe``` to build Matlab interface. 
 
-2. As an alternative, You can 
-```shell
-git clone https://github.com/yulequan/HeartSeg
-cd 3D-Caffe
-cp Makefile.config.example Makefile.config
-vim Makefile.config
-##uncomment USE_CUDNN := 1 if you want to use CuDNN
-make -j8
-make matcaffe
-```
+2. As an alternative, you can 
+  ```shell
+  git clone https://github.com/yulequan/HeartSeg
+  cd 3D-Caffe
+  cp Makefile.config.example Makefile.config
+  vim Makefile.config
+  ##uncomment USE_CUDNN := 1 if you want to use CuDNN
+  make -j8
+  make matcaffe
+  ```
 
-2. Install Matlab toolbox [NIfTI_tools](https://www.mathworks.com/matlabcentral/fileexchange/8797-tools-for-nifti-and-analyze-image) in order to read nii data format in Matlab.
+3. Install Matlab toolbox [NIfTI_tools](https://www.mathworks.com/matlabcentral/fileexchange/8797-tools-for-nifti-and-analyze-image) in order to read nii data format in Matlab.
 
 ### Usage
 
